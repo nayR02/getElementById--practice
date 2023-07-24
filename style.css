@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Rubik+Vinyl&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.hero {
+    background: #1d2026;
+    min-height: 100vh;
+    width: 100%;
+    color: black;
+    position: relative;
+}
+.hero h3 {
+    background-image: linear-gradient(
+        -225deg, 
+        rgb(162, 241, 116),
+        rgb(154, 165, 103),
+        rgb(106, 211, 153),
+        cyan
+    );
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 30px;
+}
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+.hero img {
+    width: 120px;
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px ;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+button {
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+button span {
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background 0.5s,
+    margin-left 0.5s;
+}
+.lamp-container {
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 200px;
+}
+
+body .lamp {
+    width: 100%;
+}
+body .light {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.text-container { 
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+.text-container h1 {
+    font-size: 80px;
+    font-weight: 400;
+}
+.text-container a {
+    text-decoration: none;
+    background: #00986f;
+    padding: 14px 40px;
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    margin-top: 14px;
+    border-radius: 30px;
+}
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px;
+}
+.control .line {
+    width: 250px;
+    height: 4px;
+    background: white;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+.control .line span {
+    width: 50%;
+    height: 8px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background: #00986f;
+    display: block;
+}
+.active {
+    background: #00986f;
+}
+.active span {
+    background: white;
+    margin-left: 31px;
+}
+
+body .on {
+    opacity: 1;
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1824px) and (orientation : portrait){
+    .hidden-desktop {
+      display: inherit !important;
+    }
+    .visible-desktop {
+      display: none !important ;
+    }
+    .visible-tablet {
+      display: inherit !important;
+    }
+    .hidden-tablet {
+      display: none !important;
+    }
+  }
+  
+  @media screen and (min-device-width: 768px) and (max-device-width: 1824px) and (orientation : landscape){
+    .hidden-desktop {
+      display: inherit !important;
+    }
+    .visible-desktop {
+      display: none !important ;
+    }
+    .visible-tablet {
+      display: inherit !important;
+    }
+    .hidden-tablet {
+      display: none !important;
+    }
+  }
+  @media screen and (max-device-width: 767px) and (orientation: portrait) {
+    .hidden-desktop {
+      display: inherit !important;
+    }
+    .visible-desktop {
+      display: none !important;
+    }
+    .visible-phone {
+      display: inherit !important;
+    }
+    .hidden-phone {
+      display: none !important;
+    }
+  }
+  @media screen and (max-device-width: 767px) and (orientation: landscape) {
+    .hidden-desktop {
+      display: inherit !important;
+    }
+    .visible-desktop {
+      display: none !important;
+    }
+    .visible-phone {
+      display: inherit !important;
+    }
+    .hidden-phone {
+      display: none !important;
+    }
+  } 
